@@ -80,6 +80,19 @@ class Car(object):
         
         # Update the state velocity
         self.state[1] = predicted_velocity
+    # Turn left function
+    def turn_right(self):
+        
+        # Change the velocity
+        velocity = self.state[1]
+        
+        predicted_velocity = [
+            velocity[1],
+            velocity[0]
+        ]
+        
+        # Update the state velocity
+        self.state[1] = predicted_velocity        
     
     
     # Helper function for displaying the world + robot position
